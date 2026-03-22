@@ -1,0 +1,82 @@
+{
+  "definitions": [
+    {
+      "tag": "note",
+      "display_name": "Note",
+      "content_kind": "inline_text",
+      "render_kind": "decorated_text",
+      "uses_runs": true,
+      "allows_text_input": true,
+      "contagious": false,
+      "allows_empty_persistence": true,
+      "layout": {
+        "rendered_font_size": 18,
+        "line_height": 26.0,
+        "expand_text_start": false
+      },
+      "text_style": {
+        "color": null,
+        "bold": null,
+        "italic": null,
+        "font_family": null
+      },
+      "decoration": {
+        "prefix_kind": null,
+        "prefix_text": "\u203b",
+        "suffix_kind": null,
+        "has_border": false,
+        "has_background": false,
+        "custom_renderer": null
+      },
+      "commands": {
+        "create_command": "/note/",
+        "create_from_tag": "body",
+        "clean_command": "/clean/",
+        "clean_to_tag": "body"
+      },
+      "export": {
+        "markdown_role": "paragraph",
+        "markdown_prefix": "> ",
+        "markdown_suffix": ""
+      }
+    },
+    {
+      "tag": "tip",
+      "display_name": "Tip",
+      "content_kind": "inline_text",
+      "render_kind": "decorated_text",
+      "uses_runs": true,
+      "allows_text_input": true,
+      "contagious": false,
+      "allows_empty_persistence": true,
+      "layout": {
+        "rendered_font_size": 16,
+        "line_height": 24.0,
+        "expand_text_start": false
+      },
+      "text_style": {
+        "color": null,
+        "bold": null,
+        "italic": null,
+        "font_family": null
+      },
+      "decoration": {
+        "prefix_kind": null,
+        "prefix_text": "!",
+        "suffix_kind": null,
+        "has_border": false,
+        "has_background": false,
+        "custom_renderer": null
+      },
+      "commands": {
+        "create_command": "/tip/",
+        "create_from_tag": "body",
+        "clean_command": "/clean/",
+        "clean_to_tag": "body"
+      },
+      "export": {
+        "markdown_role": "paragraph"
+      }
+    }
+  ]
+}
